@@ -31,39 +31,39 @@ p{
     <input type="button" value="显示内容" onclick="showtext()" >
     <input type="button" value="取消设置" onclick="rec()">
   </form>
-  <script type="text/javascript">
-   function colorchange() 
-    {
-      var mychar= document.getElementById("txt");
-       mychar.style.color="red"
-       mychar.style.backgroundColor ="gray"
-    }
-   function height_widthchange()  
-		{  
-	  	var mychar = document.getElementById("txt");
-        mychar.style.width="500px"
-        mychar.style.height="500px"
-		}  
- function hidetext()  
-	  {  
-		  var mychar = document.getElementById("txt");
-        mychar.style.display="none";
-		}  
-		function showtext()  
-	  {  
-	  	var mychar = document.getElementById("txt");
-        mychar.style.display="block";
-    } 
-  function rec() 
-    {
-      var message = confirm("是否取消设置");
-      if(message == true) {
-      txt.removeAttribute("style");
+   <script type="text/javascript">
+    function colorchange() 
+      {
+        var mychar= document.getElementById("txt");
+        mychar.style.color="red"
+        mychar.style.backgroundColor ="gray"
       }
-      else{
-      alert("点击了取消设置");
+    function height_widthchange()  
+      {  
+        var mychar = document.getElementById("txt");
+          mychar.style.width="500px"
+          mychar.style.height="500px"
+      }  
+    function hidetext()  
+      {  
+        var mychar = document.getElementById("txt");
+          mychar.style.display="none";
+      }  
+    function showtext()  
+      {  
+        var mychar = document.getElementById("txt");
+          mychar.style.display="block";
+      } 
+    function rec() 
+      {
+        var message = confirm("是否取消设置");
+        if(message == true) {
+        txt.removeAttribute("style");
+        }
+        else{
+        alert("点击了取消设置");
+        }
       }
-    }
   </script>
 </body>
 </html>
